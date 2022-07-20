@@ -34,7 +34,8 @@
     <main class="container-fluid mt-5">
         <h1 class="text-center fw-bold">Cadastre um novo evento</h1>
         <hr>
-        <form action="" class="mt-5" enctype="multipart/form-data">
+        <!-- Informando o arquivo evento.php em action para ser manipulado pelo PHP-->
+        <form action="evento.php" method="POST" class="mt-5" enctype="multipart/form-data">
             <section class="container col-md-6">
                 <div class="row mb-3">
                     <label for="nomeEvento" class="form-label">
@@ -56,7 +57,7 @@
                     </label>
                     <input type="file" name="banner" id="banner" class="form-control" accept="image/*">
                 </div>
-
+                <!-- Sempre deve ter o submit dentro do formulario para envio -->
                 <button type="submit" class="btn btn-primary my-3 col-12">Cadastrar</button>
 
             </section>
